@@ -17,3 +17,8 @@ yarn add nodemon -D
     - nodemon (automatically restarting the node application when file changes)
 
 node ./bin/server.js
+
+# Passo 02
+
+yarn add body-parser
+    - Parse incoming request bodies in a middleware before your handlers, available under the req.body property
