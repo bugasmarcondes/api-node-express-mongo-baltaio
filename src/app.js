@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const app = express();
-const router = express.Router();
+//const router = express.Router();
 
 // conecta no mongodb
 mongoose.connect('mongodb+srv://bugas:h7oBUS69@cluster0-0yxzg.azure.mongodb.net/test?retryWrites=true&w=majority');
