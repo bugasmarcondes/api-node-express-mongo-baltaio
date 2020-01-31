@@ -12,6 +12,8 @@ mongoose.connect('mongodb+srv://bugas:h7oBUS69@cluster0-0yxzg.azure.mongodb.net/
 
 // carrega os modelos
 const Product = require('./models/product-model');
+const Customer = require('./models/customer-model');
+const Order = require('./models/order-model');
 
 // carrega as rotas
 const indexRoute = require('./routes/index-route');
