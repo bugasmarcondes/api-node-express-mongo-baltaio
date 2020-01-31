@@ -33,6 +33,9 @@ yarn add mongoose
 
 # ... criação de rotas, controllers, models, repositories
 
-# Passo 04
+# Pacote
 
 - yarn add guid
+    - Utilizado para gerar IDs
+- yarn add md5
+    - Utilizado para encriptar as senhas com MD5
