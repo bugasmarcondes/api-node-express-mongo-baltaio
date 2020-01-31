@@ -30,3 +30,9 @@ yarn add body-parser
 
 yarn add mongoose
     - Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment
+
+# ... criação de rotas, controllers, models, repositories
+
+# Passo 04
+
+- yarn add guid

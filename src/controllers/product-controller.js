@@ -21,7 +21,7 @@ exports.get = async(req, res, next) => {
         var data = await repository.get();
         res.status(200).send(data);
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao processar sua requisição',
             message: e.message
         });
@@ -33,7 +33,7 @@ exports.getBySlug = async(req, res, next) => {
         var data = await repository.getBySlug(req.params.slug);
         res.status(200).send(data);
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao processar sua requisição',
             message: e.message
         });
@@ -45,7 +45,7 @@ exports.getById = async(req, res, next) => {
         var data = await repository.getById(req.params.id);
         res.status(200).send(data);
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao processar sua requisição',
             message: e.message
         });
@@ -57,7 +57,7 @@ exports.getByTag = async(req, res, next) => {
         var data = await repository.getByTag(req.params.tag);
         res.status(200).send(data);
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao processar sua requisição',
             message: e.message
         });
@@ -82,7 +82,7 @@ exports.post = async(req, res, next) => {
             title: 'Produto cadastrado com sucesso!'
         });
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao cadastrar o produto',
             message: e.message
         });
@@ -96,7 +96,7 @@ exports.put = async(req, res, next) => {
             title: 'Produto atualizado com sucesso'
         });
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao atualizar produto',
             message: e.message
         });
@@ -110,7 +110,7 @@ exports.delete = async(req, res, next) => {
             title: 'Produto removido com sucesso'
         });
     } catch (e) {
-        res.status(400).send({
+        res.status(500).send({
             title: 'Falha ao remover produto',
             message: e.message
         });
