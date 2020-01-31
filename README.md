@@ -39,3 +39,14 @@ yarn add mongoose
     - Utilizado para gerar IDs
 - yarn add md5
     - Utilizado para encriptar as senhas com MD5
+
+# Envio de e-mail
+
+- Acessar site do Sendgrid
+- Logar na conta e buscar por Settings > API Keys
+    - Create API Key
+    - Full access
+- inserir chave gerada no config.js
+- yarn add sendgrid@2.0.0
+- criar serviço que chama método de envio de email no sendgrid
+- importar email-service no controller e consumir serviço
