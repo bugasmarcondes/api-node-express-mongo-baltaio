@@ -63,3 +63,6 @@ yarn add mongoose
 3. registrar rota para autenticação
 4. criar métodos no controller e repositório para autenticar usuário e retornar o token
 5. proteger as rotas utilizando o método authorize() como interceptador
+
+6. armazenamos o Id do usuário no Token, para tornar mais seguras as futuras chamadas onde precisamos passar o Id do usuário logado
+    - como a informação está contida no token JWT, não passamos o Id ou Email do usuário no corpo da requisição, e a responsabilidade de identificar o usuário logado é do decodeToken()
