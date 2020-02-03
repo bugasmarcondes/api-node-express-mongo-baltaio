@@ -33,7 +33,7 @@ yarn add mongoose
 
 # ... criação de rotas, controllers, models, repositories
 
-# Pacote
+# Pacotes
 
 - yarn add guid
     - Utilizado para gerar IDs
@@ -50,3 +50,16 @@ yarn add mongoose
 - yarn add sendgrid@2.0.0
 - criar serviço que chama método de envio de email no sendgrid
 - importar email-service no controller e consumir serviço
+
+# Autenticação
+
+- podemos passar o token no Header, no Body ou como Query String
+
+1. yarn add jsonwebtoken@7.4.0
+2. criar auth-service.js com os métodos básicos
+    - gerar token
+    - decodificar token
+    - autorizar (interceptador de rotas)
+3. registrar rota para autenticação
+4. criar métodos no controller e repositório para autenticar usuário e retornar o token
+5. proteger as rotas utilizando o método authorize() como interceptador
