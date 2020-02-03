@@ -33,6 +33,7 @@ exports.authorize = function (req, res, next) {
     }
 };
 
+// verifica papel do usuário logado tentando acessar a rota
 exports.isAdmin = function (req, res, next) {
     var token = req.body.token || req.query.token || req.headers['x-access-token'];
 

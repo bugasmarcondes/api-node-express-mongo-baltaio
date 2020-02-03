@@ -66,3 +66,8 @@ yarn add mongoose
 
 6. armazenamos o Id do usuário no Token, para tornar mais seguras as futuras chamadas onde precisamos passar o Id do usuário logado
     - como a informação está contida no token JWT, não passamos o Id ou Email do usuário no corpo da requisição, e a responsabilidade de identificar o usuário logado é do decodeToken()
+
+7. definir os diferentes papéis que terão acesso a aplicação (customer-model.js)
+8. criar método isAdmin no auth-service.js
+9. atualizar controller para criar usuário com nova informação de role, e também para retornar token (authenticate e refresh) com o novo campo roles
+10. atualizar as rotas com o novo método que só deixa acessar quando usuário é admin
